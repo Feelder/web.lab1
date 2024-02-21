@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="css lab3.css" rel="stylesheet" />
+    <title>Нестайко Павло 535б лаб2</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="headleft">
+                <div class="logo"> <a href="wed.lab3.html"><img src="img/Layer 2.png" alt="teeth shadow" /></a></div>
+                <div class="headcenter">
+                    <div class="HELTH"><img src="img/HELTH.png" alt="dentalhelth" /></div>
+                    <div class="texttop">
+                        These innovations have served to enable us to <br />
+                        better live our mission; "To build partnerships <br />
+                        that improve our customers' earnings by co-managing <br />
+                        their supply, equipment and practice management needs". <br />
+                    </div>
+                    <div class="topdate">
+                        Wednesday, October 23, 2002
+                    </div>
+                </div>
+            </div>
+            <div class="headright">
+                <div class="headbutt">
+                    <a href="#" class="a-help"> <span>help</span>  </a>
+                    <a href="#" class="a-about"> <span>about us</span>  </a>
+                    <a href="#" class="a-contact"> <span>contact</span>  </a>
+                </div>
+                <div class="headbuttsrc">
+                    <div class="search"><b>SEARCH:</b></div>
+                    <div class="inp"><input type="text"></div>
+                    <div><button><span><b>ok</b></span></button></div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="mainleft">
+                <img src="img/main_logo1.png" class="logo_ost" alt="logo_ost" />
+                <menu>
+                    <li> <span>Merchandise</span> </li>
+                    <li><span>Equipment</span></li>
+                    <li><span>Service</span></li>
+                    <li><span>Seminars</span></li>
+                    <li><span>Practice Development</span></li>
+                    <li><span>Painless Web</span></li>
+                    <li><span>BluChips Rewards</span></li>
+                    <li><span>Earnings Builders</span></li>
+                    <li><span>Interlink</span></li>
+                    <li><span>Featured Products</span></li>
+                    <li><span>Partners</span></li>
+                    <li><span>International</span></li>
+                    <li><span>Government</span></li>
+                    <li><span>Handpiece repairs</span></li>
+                </menu>
+                <br />
+                <div class="prodact">
+                    <div class="spoil"><b>Spotlight Features</b></div>
+                    <div class="main_lefttxt">
+                        <img src="img/prod1.png" class="prod_img" alt="prod1" />
+                        <b>Seminars in your area</b><br />
+                        Dates, topics, locations,<br />
+                        & prices. Save 10% when<br />
+                        3 or more sign-up!<br />
+                        <br />
+                        <b>
+                            Topics, Trends,<br />
+                            Techniques<br />
+                        </b>
+                        Don't let your patients<br />
+                        give you the brush-off.<br />
+                        Increase patient<br />
+                        acceptance!<br />
+                    </div>
+                </div>
+            </div>
+            <div class="mainright">
+                <div class="upright">
+                    <div class="whatsnew"><b>What's New:</b></div>
+                    <div class="maintext">
+
+
+                        <form name="ffirst" id="fst" onsubmit="return Check(this)" method="POST" enctype="multipart/form-data">
+
+                            <div><input class="inputmain inputmain1" type="text" required="required" pattern="^[a-zA-Z]{2,20}$" id="fistname" value="" placeholder="Фамиллия" /></div> <br /><br />
+                            <div><input class="inputmain inputmain1" type="text" required="required" pattern="^[a-zA-Z]{2,20}$" id="name" value="" placeholder="Имя"/></div> <br /><br />
+
+                            <div><select id="sel">
+                                <option >Man</option>
+                                <option >Wom</option>
+                            </select></div>
+                            <br /> Дата: <br />
+
+                            <input class="inputmain" type="number" min="1" max="31" id="date" value="" /> <br /> <br />Месяц:<br />
+
+                            <input class="inputmain" type="number" min="1" max="12" id="month" value="" /> <br /><br /> Год:<br />
+
+                            <input class="inputmain" type="number" min="1900" max="2100" id="year" value="" /> <br /><br /><br />
+                            <input type="submit" id="buttsub1" style="transform:translate(0,0)"  class="checkbut" name="buttsub" value="Отправить"  />
+                            <br /><br />
+                        </form>
+
+
+
+                        
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+
+
+        <script>
+            var el1 = document.forms.ffirst;
+            var date1 = new Date();
+            el1.date.value = date1.getDate();
+            el1.month.value = date1.getMonth() + 1;
+            el1.year.value = date1.getFullYear();
+            
+            
+            
+            function Aniclick(objid) {
+                var element = document.getElementById(objid);
+                var from = 0; 
+                var to = 390; 
+                var duration = 2000; 
+                var fps = 100;		
+                var fps_tick = (1000 / fps);		
+                var start = new Date().getTime(); 
+
+                setTimeout(function () {
+                    var now = (new Date().getTime()) - start; // Текущее время
+
+                    var progress = now / duration; // Прогресс анимации - K - 0:1
+                    if (progress > 1)
+                        progress = 1;
+
+                    var delta = Math.pow(progress, 2);
+                    var result = (to - from) * delta + from;
+                    console.log("translate(" + result + ",0)");
+                    element.style.transform = "translate(" + result + "px ,0)";
+
+                    if (progress < 1) // Если анимация не закончилась, продолжаем
+                        setTimeout(arguments.callee, fps_tick);
+
+                }, 10);
+            }
+
+            function Check(frm) {
+                let y = parseInt(el1.year.value)
+                let m = parseInt(el1.month.value)
+                let d = parseInt(el1.date.value)
+                let date1 = new Date(y, m, d, 0, 0, 0, 0)
+                let date2 = new Date()
+                
+                if ((date2.getFullYear() - date1.getFullYear()) < 21 && el1.sel.selectedIndex == 0) {
+                    alert("Нельзя зарегистриироваться!")
+                }
+                else {
+                    if ((date2.getFullYear() - date1.getFullYear()) < 18 && el1.sel.selectedIndex == 1)
+                        alert("Нельзя зарегистриироваться!")
+                    else {
+                        console.log("Good")
+                        Aniclick('buttsub1')
+                    }
+                }
+                return false
+            }
+        </script>
+    </div>
+    
+</body>
+</html>

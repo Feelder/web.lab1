@@ -1,0 +1,248 @@
+﻿body {
+    font-size: 11px;
+    font-family: Verdana;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+header {
+    color: white;
+    background-color: #ff7d21;
+    border-radius: 0 0 12px 0;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+header:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.wrapper {
+    width: 750px;
+    margin: 0 auto;
+}
+.headleft {
+    float: left;
+    width: calc(100% - 216px);
+    height: 131px;
+    overflow: hidden;
+    background: url('img/up-bg.png') repeat-x 0;
+    border-right: 1px solid #20207e;
+}
+.headright{
+    float: right;
+    width: 215px;
+}
+.headbutt {
+    padding: 4px 2px 10px 2px;
+    border-bottom: 1px solid #20207e;
+    margin-bottom:8px;
+    font-size:10px;
+}
+.headbutt>a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    background: url('img/Layer 5.png') no-repeat 50% 0;
+    width: 66px;
+    padding: 10px 0 0px 0;
+    text-align: center;
+}
+.headbutt>a:hover {
+    text-decoration: underline;
+}
+.headbutt>a>span{
+    display: inline-block;
+    padding-top: 20px;
+}
+.headbutt > a.a-help > span {
+    background: url('img/znak.png') no-repeat 50% 0;
+}
+.headbutt > a.a-about > span {
+    background: url('img/znak1.png') no-repeat 50% 0;
+}
+.headbutt > a.a-contact > span {
+    background: url('img/Shape 1.png')no-repeat 50% 4px;
+
+}
+.logo{
+    float: left;
+    width: 144px;
+
+}
+.headcenter{
+    float: right;
+    width: calc(100%- 160px);
+}
+
+.texttop {
+    box-sizing: border-box;
+    padding: 0 2px 2px 0;
+    text-align: right;
+    line-height: 19px;
+}
+.HELTH{
+    padding: 5px 0;
+}
+.topdate{
+    padding-right:2px;
+    padding-top: 4px;
+    text-align:right;
+}
+input{
+    border: 1px solid black;
+    float: right;
+    width: 148px;
+    margin-right: 7px;
+    margin-bottom: 3px;
+}
+
+.mainleft {
+    float: left;
+    width: 180px;
+    background-color: #ff7d21;
+}
+
+.mainright {
+    float: right;
+    width: calc(100% - 194px);
+    padding: 12px 0 0 13px;
+    height: 410px;
+}
+
+.search {
+    font-size: 10px;
+    padding-left: 6px;
+    padding-bottom: 2px;
+}
+.whatsnew {
+    color: white;
+    background-color: #20207e;
+    padding-left: 9px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    width: 70.9vw;
+    max-width: 546px;
+}
+.maintext {
+    font-size: 12px;
+    border-left: 1px solid #20207e;
+    border-right: 1px solid #20207e;
+    border-bottom: 1px solid #20207e;
+    padding-left: 8px;
+    padding-top: 11px;
+    width: 71vw;
+    max-width:545px;
+}
+.inputmain {
+    display: flex;
+    text-align:center;
+    margin:0;
+    float:left;
+    width: 130px;
+}
+.inputmain1 {
+    display: block;
+    margin: 0;
+    float: left;
+    width: 130px;
+}
+.blurhip {
+    color: #20207e;
+}
+menu {
+    margin-left: 4px;
+    display: block;
+    list-style-type: "⁖ ";
+    margin-left: 4px;
+    padding:0;
+    border-left: 1px solid #20207e;
+    border-bottom: 1px solid #20207e;
+    padding-top:0;
+}
+    menu > li {
+        font-size: 14px;
+        color: #20207e;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #20207e;
+    }
+menu > li > span {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.prod_img {
+    margin: 0 auto;
+}
+.main_lefttxt {
+    
+    padding-left:6px;
+    background-color: white;
+}
+.prodact {
+    font-size:10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.spoil {
+    font-size: 11px;
+    margin-top: 4px;
+    background: url('img/Layer 5.png') no-repeat 3% 0;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: white;
+}
+.bucks{
+    float: right;
+    padding-right:40px;
+    margin:0;
+}
+.low_main {
+    height: 152px;
+    width: 71vw;
+    max-width: 545px;
+}
+
+button {
+    background: url('img/ok.png') no-repeat 50% 0;
+    text-align: center;
+    float: right;
+    color: white;
+    border: none;
+    padding: 7px 23px 0 20px;
+}
+button>span{
+    font-size:18px;
+}
+.checkbut {
+    background: none;
+    text-align: center;
+    float:left;
+    color: black;
+    border: solid 1px black;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
